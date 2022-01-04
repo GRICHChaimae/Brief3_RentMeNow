@@ -102,7 +102,7 @@
   }
   
   .mobile-menu {
-    background-color: black;
+      background-color: black;
     display: none;
     position: absolute;
     top: 50px;
@@ -115,41 +115,77 @@
     margin-bottom: 10px;
   }
 
-.container p{
-    width:300px;
-    margin-top:10px;
-}
 
-.container{
+.container_totale{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:100px;
+    margin-left:10%;
+    margin-top:50px;
     background-color:rgba(255, 255, 255,0.3);
-    width: 715px;
+    width: 80%;
     height: auto;
     padding: 15px;
 }
 
-.toWrite{
-    margin-left:50px;
-    /* padding-left: 0px; */
+.main_P{
+    color:#82D8FE; 
+    font-weight: bold; 
+    margin-bottom:30px;
 }
 
-.toWrite input,textarea{
+.container{
+    margin-left: 20px;
+}
+
+.type_prix{
+    display: flex;
+    margin-left: 10%;
+}
+p{
+    font-size: 20px;
+}
+.type_prix p{
+    margin-bottom: 10px;
+}
+
+.type{
+    width:200px;
+}
+
+.type p , .Tarif p{
+    margin-bottom: 15px;
+}
+
+select , #duree{
     border: black 2px solid ;
-    padding-left: 5px;
-    width:330px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
 }
 
-.toWrite input{
-    height:30px;
-    margin-bottom: 20px; 
+#p{
+    margin-bottom: 10px;
 }
 
-h3{
-    color:#82D8FE;
+#input_carburant div{
+    margin-bottom: 5px;
+    
 }
+
+#input_carburant div input{
+   border: solid 1px black;
+   cursor: pointer;
+}
+
+#input_carburant div input:checked{
+    color:black;
+}
+
+input[type="radio"] {
+    border: solid 2px #82D8FE;
+}
+  
+
 
 button{
     background-color: black;
@@ -158,18 +194,16 @@ button{
     width: 70px;
     height: 30px;
     border-radius: 10px;
-    margin-top: 5%;
     border:2px black solid;
     cursor: pointer;
 }
-
 
   .footer{
     display: flex;
     flex-direction: row;
     background-color:rgba(255, 255, 255, 0.2);
     justify-content: space-between;
-    position:fixed;
+    margin-top:47px;
     padding-top: 15px;
     padding-bottom: 15px;
     height: 40px;
@@ -189,8 +223,7 @@ button{
       width:20px;
       height:20px;
   }
-
-
+ 
   @media only screen and (max-width: 600px) {
     header nav {
       display: none;
@@ -199,35 +232,36 @@ button{
     #hamburger-icon {
       display: block;
     }
-
-    .container p{
-        width:100%;
-    }
-    
-    .container{
+   
+    .container_totale{
         display: block;
-        margin-top:50px;
+        margin-left:10%;
+        margin-top:40px;
+        background-color:rgba(255, 255, 255,0.3);
         width: 80%;
+        height: auto;
+        padding: 15px;
     }
-
-    
-    .toWrite{
-        margin-left:0px;
-        margin-top: 20px;
-    }
-    
-    .toWrite input,textarea{
-        width:100%;
-    }
-    
-    .toWrite input{
-        margin-bottom: 10px;
-        
-    }
-    
     button{
         width: 70px;
         height: 30px;
+    }
+    .type_prix{
+        margin-left:0px;
+        margin-top: 10px;
+    }
+    select , #duree{
+        
+        width: 200px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .main_P{
+        margin-bottom:20px;
+    }
+    .container{
+        margin-left: 0px;
     }
 
     .footer{
@@ -235,7 +269,7 @@ button{
         flex-direction: row;
         background-color:black;
         justify-content: space-between;
-        position:fixed;
+        
         padding-top: 15px;
         height: auto;
         padding-right: 10px;
